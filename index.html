@@ -8,22 +8,12 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div id="app" class="container">
-        <h2>Calculadora Aritmética</h2>
-        <input type="number" v-model.number="num1" placeholder="Número 1">
-        <select v-model="operacao">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-        </select>
-        <input type="number" v-model.number="num2" placeholder="Número 2">
-
-        <div class="resultado">
-            Resultado: {{ resultado }}
-        </div>
-
-        <script src="app.js"></script>
+    <div id="app">
+        <h1>Calculadora Vue</h1>
+        <calculator></calculator>
     </div>
+
+    <script src="components/Calculator.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
